@@ -24,10 +24,10 @@ The right-tail probability of a quadratic form (Q = X'AX) of noncentral Gaussian
 Right-tail probability of quadratic forms (Q = X'AX) of noncentral Gaussian variables.
 }
 \examples{
-n = 100
-Sigma = toeplitz(1/(1:n))
-mu = rep(1, n)
-thr = 500
+n <- 100
+Sigma <- toeplitz(1/(1:n))
+mu <- rep(1, n)
+thr <- 500
 Qapprox_nc(thr, mu, Sigma, method="SW")
 Qapprox_nc(thr, mu, Sigma, method="LTZ4")
 Qapprox_nc(thr, mu, Sigma, method="MR")

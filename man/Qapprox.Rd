@@ -22,9 +22,9 @@ The right-tail probability of a quadratic form (Q = X'AX) of centered Gaussian v
 Right-tail probability of quadratic forms of centered Gaussian variables.
 }
 \examples{
-n = 100
-Sigma = toeplitz(1/(1:n))
-thr = 180
+n <- 100
+Sigma <- toeplitz(1/(1:n))
+thr <- 180
 Qapprox(thr, Sigma, method="SW")
 Qapprox(thr, Sigma, method="LTZ4")
 Qapprox(thr, Sigma, method="MR")
